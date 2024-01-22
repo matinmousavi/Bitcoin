@@ -1,0 +1,68 @@
+// helper classes
+
+.container {
+  max-width: $primary-width;
+  margin: auto;
+  padding: 1.5rem 0;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: $dark-color;
+  position: relative;
+  padding-bottom: 2rem;
+  span {
+    position: relative;
+    padding-bottom: 2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 6px;
+      width: 100%;
+      background-color: $primary-color;
+      bottom: 0;
+      z-index: 1;
+      left: 0;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #98989864;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.card {
+  .recent__news-article__title {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: $dark-color;
+  }
+  .header__news-card__description-footer {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    margin: 1rem 0;
+    .header__news-card__creator {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.line {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #ffffff2e;
+    height: 2px;
+    left: 0;
+    bottom: -15px;
+  }
+}
